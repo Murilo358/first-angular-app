@@ -1,1 +1,16 @@
-<app-footer> </app-footer>
+<div>
+<h1>{{ name }}</h1>
+
+<button (click)="teste()">Me clique</button>
+
+@if(name == "Murilo") {
+    <h2>Valor true </h2>
+}
+
+@for (item of list; track $index) {
+    <li>{{item}}</li>
+} @empty {
+    <li>List is empty</li>
+}
+
+</div>
